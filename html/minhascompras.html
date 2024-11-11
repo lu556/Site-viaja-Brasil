@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Compras</title>
+    <link rel="stylesheet" href="../css/PaginaPagamento.css"> <!-- Link para o CSS -->
+    <script src="../js/minhascompras.js" defer></script>
+    <script src="../js/auth.js" defer></script> <!-- Link para o JavaScript -->
+</head>
+<body>
+    
+    <header>
+        <nav id="nav">
+            <a href="busca-voos.html" class="cta-button">Buscar Voos</a>
+            <a href="index.html">Home</a>
+            <a href="index.html">Contato</a>
+            <a href="minhascompras.html">Minhas Passagens</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Minhas Compras</h1>
+        <button id="carregar-compras" onclick="loadCompras()">Carregar Compras</button>
+        <div id="compras-list" class="grid"></div> <!-- Adicionei a classe 'grid' aqui -->
+    </div>
+
+</body>
+</html>

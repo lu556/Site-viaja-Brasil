@@ -1,0 +1,246 @@
+/* Cabeçalho */
+header {
+    background: linear-gradient(145deg, #003580, #0057ff); /* Gradiente moderno */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para o efeito 3D */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+.cta-button {
+    background-color: #ff6600;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+    transform: translateY(-5px); /* Elevação mais acentuada */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../img/viagemloka.jpg'); /* Imagem de alta resolução */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    animation: fadeIn 2s ease; /* Animação suave ao carregar */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Sombra para destaque no texto */
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Seções */
+.section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 20px; /* Bordas mais arredondadas para suavidade */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Efeito de profundidade */
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02); /* Pequeno zoom ao passar o mouse */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Botões e WhatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24d366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+.whatsapp-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(145deg, #003580, #0057ff); /* Gradiente moderno no rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1); /* Sombra superior suave */
+}
+
+#logout-button {
+    background-color: #f44336; /* Vermelho */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Para o botão se comportar como um bloco */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 2px; /* Margem */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+#logout-button:hover {
+    background-color: #c62828; /* Tom mais escuro ao passar o mouse */
+}
+
+#chatBox {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para as mensagens */
+#chatBox div {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+#chatBox .user {
+    background-color: #0078d4;
+    color: #fff;
+    align-self: flex-end;
+    max-width: 80%;
+}
+#chatBox .bot {
+    background-color: #e0e0e0;
+    color: #333;
+    align-self: flex-start;
+    max-width: 80%;
+}
+
+/* Estilo para o input */
+#userMessage {
+    width: calc(100% - 90px);
+    max-width: 510px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+}
+
+/* Estilo para o botão */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #chatBox, #userMessage, button {
+        width: 100%;
+        max-width: 100%;
+    }
+    button {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+

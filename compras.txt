@@ -1,0 +1,118 @@
+---
+Usuário: 123@123.cpm
+Origem: São Paulo
+Destino: Nova York
+Data: 2024-12-13
+Preço: R$721.89
+Nome no Cartão: 123
+Número do Cartão: Não informado
+Chave Pix: Não informado
+---
+Usuário: 123@123.com
+Origem: São Paulo
+Destino: Londres
+Data: 2024-12-16
+Preço: R$741.71
+Nome no Cartão: 123213
+Número do Cartão: Não informado
+Chave Pix: Não informado
+---
+Usuário: 1@1.com
+Origem: São Paulo
+Destino: Londres
+Data: 2024-12-16
+Preço: R$741.71
+Nome no Cartão: 1
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: 1@1.com
+Origem: São Paulo
+Destino: Rio de Janeiro
+Data: 2024-12-31
+Preço: R$220.96
+Nome no Cartão: 1
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: 1@1.com
+Origem: São Paulo
+Destino: Rio de Janeiro
+Data: 2024-12-31
+Preço: R$220.96
+Nome no Cartão: 1
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: 1@1.com
+Origem: Belo Horizonte
+Destino: São Paulo
+Data: 2024-12-09
+Preço: R$211.42
+Nome no Cartão: 2
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+
+Usuário: 1@1.com
+Origem: Belo Horizonte
+Destino: São Paulo
+Data: 2024-12-09
+Preço: R$211.42
+Nome no Cartão: 2
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: 1@1.com
+Origem: Belo Horizonte
+Destino: São Paulo
+Data: 2024-12-09
+Preço: R$211.42
+Nome no Cartão: 2
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: 1@1.com
+Origem: Belo Horizonte
+Destino: São Paulo
+Data: 2024-12-09
+Preço: R$211.42
+Nome no Cartão: 2
+Número do Cartão: Não informado
+Chave Pix: Não informado
+Usuário: 1@1.com
+Origem: Tóquio
+Destino: Salvador
+Data: 2025-01-10
+Preço: R$790.51
+Nome no Cartão: 1
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: lucas1234@gmail.com
+Origem: Curitiba
+Destino: Las Vegas
+Data: 2024-11-02
+Preço: R$756.89
+Nome no Cartão: luvcdn ijdwid kdn
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: lucas1234@gmail.com
+Origem: São Paulo
+Destino: Toronto
+Data: 2024-12-05
+Preço: R$778.46
+Nome no Cartão: lucas santos
+Número do Cartão: Não informado
+Chave Pix: Não informado
+
+Usuário: lucas1234@gmail.com
+Origem: São Paulo
+Destino: Toronto
+Data: 2024-12-05
+Preço: R$778.46
+Nome no Cartão: lfdkndslnsdkng
+Número do Cartão: Não informado
+Chave Pix: Não informado
+

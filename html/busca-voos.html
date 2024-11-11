@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Voos | Viaja Brasil</title>
+    <link rel="stylesheet" href="../css/styles3.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/voos.js" defer></script>
+    <script src="../js/auth.js" defer></script>
+    <script src="../js/busca.js" defer></script>
+    <script src="../js/cidades.js" defer></script>
+</head>
+<body class="is-preload">
+    <!-- Header -->
+    <header id="header" class="alt">
+        <span class="logo"><img style="border-radius: 100px;" src="../img/Aviao.jpg" alt="Logo Viaja Brasil" /></span>
+        <h1 style="color: aqua;">Viaja Brasil - Busca de Voos</h1>
+        <p>Encontre a melhor opção de voo com facilidade e rapidez.</p>
+    </header>
+
+    <!-- Formulário de Busca -->
+    <section id="search" class="main">
+        <div class="container">
+            <header class="major">
+                <h2>Encontre seu próximo destino</h2>
+                <p>Preencha os campos abaixo para visualizar as melhores opções de voo.</p>
+            </header>
+            <form onsubmit="event.preventDefault(); exibirResultados();">
+                <label for="origem">Origem:</label>
+                <div style="position: relative;">
+                    <input type="text" id="origem" oninput="filtrarSugestoes(this.value, 'sugestoesOrigem')">
+                    <div id="sugestoesOrigem" class="suggestions"></div>
+                </div>
+                <br><br>
+                <label for="destino">Destino:</label>
+                <div style="position: relative;">
+                    <input type="text" id="destino" oninput="filtrarSugestoes(this.value, 'sugestoesDestino')">
+                    <div id="sugestoesDestino" class="suggestions"></div>
+                </div>
+                <br><br>
+                <label for="mes">Mês (opcional):</label>
+                <input type="month" id="mes">
+                <br><br>
+                <button type="submit" class="button primary">Buscar Voos</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Resultados da Busca -->
+    <section id="resultados" class="main special">
+        <header class="major">
+            <h2>Resultados:</h2>
+        </header>
+        <div id="resultadosContainer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h2>Conte Sempre Conosco!</h2>
+            <p>A Viaja Brasil valoriza cada cliente e quer que você saiba que é sempre bem-vindo para voltar a viajar conosco.</p>
+            <ul class="actions">
+                <li><a href="generic.html" class="button">Desconectar</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Viaja Brasil</h2>
+            <dl class="alt">
+                <dt>Endereço</dt>
+                <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+                <dt>Telefone</dt>
+                <dd>(000) 000-0000 x 0000</dd>
+                <dt>Email</dt>
+                <dd><a href="mailto:contato@Viaja Brasil.com">contato@Viaja Brasil.com</a></dd>
+            </dl>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

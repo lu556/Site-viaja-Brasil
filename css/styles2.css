@@ -1,0 +1,126 @@
+/* Aplica a imagem de fundo na página */
+body {
+    background-image: url('../img/PortoGalinhos.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 100vh; /* Faz com que o fundo ocupe 100% da altura da tela */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-wrapper {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.brand-title {
+    font-size: 5rem; /* Tamanho grande para telas de alta resolução (4K) */
+    font-weight: bold; /* Deixa o texto mais forte */
+    color: white; /* Mantém a transparência da cor */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra para dar profundidade */
+    letter-spacing: 3px; /* Espaçamento entre letras para um efeito mais espaçado */
+    font-family: 'Arial', sans-serif; /* Escolha uma fonte moderna ou use fontes do Google Fonts */
+}
+
+/* Caixa de login moderna e responsiva */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+    padding: 30px; /* Aumentado para espaçamento mais confortável */
+    border-radius: 15px; /* Bordas mais arredondadas para visual moderno */
+    width: 300px; /* Tamanho maior para telas 4K */
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+    transition: transform 0.3s ease; /* Transição suave ao interagir */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.login-box:hover {
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
+}
+
+/* Estilização dos grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Aumenta o tamanho do rótulo */
+    color: #333; /* Cor mais escura para contraste */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px; /* Maior conforto nos campos de texto */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    font-size: 1.1rem; /* Tamanho da fonte maior */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna sutil */
+    transition: border-color 0.3s ease;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.input-group input:focus {
+    border-color: #4c06d7; /* Destaque ao focar no campo */
+    outline: none;
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 15px; /* Mais espaçamento no botão */
+    background-color: #4c06d7;
+    border: none;
+    color: white;
+    font-size: 1.2rem; /* Fonte maior para botões */
+    font-weight: bold;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: white;
+    color: #4c06d7; /* Inverte as cores ao passar o mouse */
+    border: 2px solid #4c06d7; /* Borda visível no hover */
+}
+
+/* Opções adicionais */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.forgot-password {
+    color: #4c06d7;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Link de cadastro */
+.signup-link a {
+    color: #4c06d7;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas maiores */
+@media screen and (min-width: 1440px) {
+    .login-box {
+        width: 400px; /* Ajusta o tamanho da caixa de login em telas grandes */
+        padding: 30px;
+        align-items: center; /* Centraliza horizontalmente */
+    }
+}
+

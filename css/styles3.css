@@ -1,0 +1,120 @@
+/* Reset básico */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Gradiente suave */
+}
+
+/* Estilização do cabeçalho */
+h1 {
+    text-align: center;
+    color: #433fae; /* Cor vibrante */
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para o título */
+    font-size: 2.5em; /* Tamanho maior */
+}
+
+/* Estilização do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff; /* Fundo branco */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transition: transform 0.3s; /* Animação de transformação */
+}
+
+form:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #433fae; /* Cor dos rótulos */
+    font-weight: bold;
+    font-size: 1.1em; /* Aumenta o tamanho da fonte */
+}
+
+form input[type="text"],
+form input[type="date"] {
+    width: calc(100% - 20px); /* Largura total com padding */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Bordas suaves */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    transition: border 0.3s, box-shadow 0.3s; /* Transições suaves */
+    font-size: 1em; /* Tamanho da fonte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus {
+    border: 2px solid #433fae; /* Borda azul ao focar */
+    box-shadow: 0 0 8px rgba(67, 63, 174, 0.5); /* Sombra ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilização do botão */
+button {
+    background: linear-gradient(to right, #1755d2, #1f7feb); /* Gradiente de fundo */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Bordas bem arredondadas */
+    cursor: pointer;
+    font-size: 1.2em; /* Tamanho da fonte maior */
+    transition: background 0.3s, transform 0.3s;
+    display: block; /* Para centralizar o botão */
+    margin: 20px auto; /* Centraliza o botão */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+}
+
+button:hover {
+    background: linear-gradient(to right, #0e04d4, #1f7feb); /* Gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+/* Estilização dos resultados */
+#resultados {
+    
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+#resultados div {
+    margin-bottom: 15px; /* Margem entre resultados */
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+#resultados div:hover {
+    transform: translateY(-5px); /* Levantar ao passar o mouse */
+}
+
+#resultados p {
+    margin: 10px 0;
+}
+
+/* Estilização da mensagem de 'Nenhum voo encontrado' */
+#resultados p:last-child {
+    text-align: center; /* Centraliza a mensagem */
+    color: #888; /* Cor cinza para mensagem */
+    font-style: italic; /* Estilo itálico para a mensagem */
+}
+

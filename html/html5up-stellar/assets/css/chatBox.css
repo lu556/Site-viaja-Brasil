@@ -1,0 +1,84 @@
+ /* Caixa do chat */
+ #chatBox {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 15px;
+}
+
+/* Estilos das mensagens */
+.message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* Mensagem do usuário */
+.user {
+    align-self: flex-end;
+    background-color: #0078D4;
+    color: #ffffff;
+    border-bottom-right-radius: 3px;
+}
+
+/* Mensagem do bot */
+.bot {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: #333333;
+    border-bottom-left-radius: 3px;
+}
+
+/* Campo de entrada e botão de envio */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#userMessage {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0078D4;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Animações */
+.message {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

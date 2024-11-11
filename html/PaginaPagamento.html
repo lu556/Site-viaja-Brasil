@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento - Voo</title>
+    <link rel="stylesheet" href="../css/PaginaPagamento.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <script src="../js/auth.js"></script>
+    <div id="wrapper">
+    <div class="container">
+        <a href="index.html">
+        <h1>Viaja Brasil</h1>
+        </a>
+        <h1>Página de Pagamento</h1>
+
+        <div class="flight-details" >
+            <h2>Detalhes do Voo</h2>
+            <p id="origem"></p>
+            <p id="destino"></p>
+            <p id="data"></p>
+            <p id="preco"></p>
+        </div>
+
+        <!-- Formulário de pagamento -->
+        <form id="payment-form" >
+            <h2>Informações de Pagamento</h2>
+            <label for="payment-method">Método de Pagamento</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credito">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+            </select>
+            <div id="card-payment-fields">
+                <label for="name">Nome no Cartão</label>
+                <input type="text" id="name" name="name" required>
+                <label for="card-number">Número do Cartão</label>
+                <input type="text" id="card-number" name="card-number" maxlength="19" required>
+                <p id="card-error"></p>
+                <label for="expiration">Data de Validade</label>
+                <input type="text" id="expiration" name="expiration" placeholder="MM/AA" maxlength="5" required>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" required>
+            </div>
+
+            <!-- Campo oculto para o e-mail do usuário -->
+            <input type="hidden" id="email" name="email">
+
+            <button type="submit">Finalizar Pagamento</button>
+        </form>
+
+        <div id="success-message" style="display: none;">
+            <h3>Pagamento realizado com sucesso!</h3>
+            <p id="payment-result"></p>
+            <p>Obrigado por comprar conosco. Você receberá uma confirmação no seu e-mail.</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        // Carregar o e-mail do usuário do localStorage e preencher o campo oculto
+        const userId = localStorage.getItem('userId');
+        if (userId) {
+            document.getElementById('email').value = userId; // Preenche o e-mail automaticamente
+        } else {
+            console.error("Usuário não está logado. Nenhum ID de e-mail encontrado.");
+        }
+
+        // Configurar a submissão do formulário e exibir mensagem de sucesso
+        document.getElementById('payment-form').onsubmit = function(event) {
+            event.preventDefault();
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('payment-result').innerText = `Pagamento realizado com o e-mail: ${userId}`;
+        };
+    </script>
+    <script src="../js/Pagamento.js"></script>
+</body>
+</html>
